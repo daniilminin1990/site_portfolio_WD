@@ -1,6 +1,7 @@
 :root {
   --bgDarkBlue: #34547A;
   --silverColor: #EEEFF1;
+  --mediumGrayColor: #727272;
 }
 
 html {
@@ -30,12 +31,60 @@ p {
   padding: 0;
 }
 
-
 .container {
-  width: 115rem;
+  width: 116.5rem;
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
+
+.h2-uniform {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.p-uniform {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--mediumGrayColor);
+}
+
+/* section Video */
+.video {
+  background-color: var(--silverColor);
+  padding: 10rem 0;
+}
+
+.video .container {}
+
+.video__h2 {
+  text-align: center;
+  margin-bottom: 3.9rem;
+}
+
+.video__p {
+  text-align: center;
+  max-width: 54rem;
+  margin: 0 auto 4.9rem;
+}
+
+.video__video-wrapper {
+  position: relative;
+  max-width: 111rem;
+  width: 100%;
+  padding-top: 56.5%;
+  /* Т.к. видео в YouTube стандартно 16/9 = 56.5%*/
+  margin: 0 auto;
+}
+
+.video__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /* section Form */
 .form {
@@ -52,24 +101,20 @@ p {
 .form__h2 {
   margin-top: -1rem;
   margin-bottom: 4.2rem;
-  font-size: 3.2rem;
-  font-weight: 500;
   text-align: center;
 }
 
 .form__p {
   text-align: center;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
   margin-bottom: 5.6rem;
 }
-
-.form__form {}
 
 .form__inner-flex {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.6rem;
+  /* max-width: 54rem;
+  width: 100%; */
 }
 
 .form__input,
@@ -116,4 +161,27 @@ p {
 
 .form__button:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .form .container {
+    padding: 10rem 1.5rem;
+  }
+
+  .form__inner-flex {
+    flex-wrap: wrap;
+  }
+
+  .form__input {
+    max-width: 54rem;
+    width: 100%;
+  }
+
+  .form__input:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
 }
