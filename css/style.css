@@ -49,7 +49,7 @@ li {
 }
 
 .container {
-  width: 116.5rem;
+  width: 118rem;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -335,7 +335,7 @@ li {
 }
 
 .projects .container {
-  width: 192rem;
+  width: 195rem;
 }
 
 .projects__grid {
@@ -346,7 +346,36 @@ li {
   gap: 0;
 }
 
-.projects__grid_item {}
+.projects__grid_item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 48rem;
+  height: 48rem;
+}
+
+.project1 {
+  background-image: url("../imgs/project1.jpg");
+}
+
+.project2 {
+  background-image: url("../imgs/project2.jpg");
+}
+
+.wrapToHover {
+  max-height: 48rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(52, 84, 122, 0.65);
+  opacity: 0;
+}
+
+.wrapToHover:hover {
+  opacity: 1;
+  transition: 0.3s ease;
+}
 
 .projects__wrapper_eye-invisible {
   max-width: 10rem;
@@ -359,11 +388,6 @@ li {
   width: 100%;
   vertical-align: middle;
 }
-
-.projects__imgs:hover {
-  background: rgba(52, 84, 122, 0.8);
-}
-
 
 /* section Form */
 .form {
@@ -392,8 +416,6 @@ li {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.6rem;
-  /* max-width: 54rem;
-  width: 100%; */
 }
 
 .form__input,
@@ -425,6 +447,8 @@ li {
   display: block;
   margin: 0 auto;
 }
+
+/* section Clients */
 
 @media screen and (max-width: 768px) {
   html {
