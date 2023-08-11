@@ -12,6 +12,110 @@
 </head>
 
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__flex">
+        <div class="header__left-flex-item">
+          <img src="imgs/Logo.svg" alt="Logo" class="header__logo">
+        </div>
+        <div class="header__right-flex-item">
+          <nav class="header__nav-flex">
+            <li class="header__li-item"><a href="#" class="header__link">Главная</a></li>
+            <li class="header__li-item"><a href="#" class="header__link">Об авторе</a></li>
+            <li class="header__li-item"><a href="#" class="header__link">Работы</a></li>
+            <li class="header__li-item"><a href="#" class="header__link">Процесс</a></li>
+            <li class="header__li-item"><a href="#form" class="header__link">Контакты</a></li>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="main">
+    <div class="container">
+      <div class="main__flex flex">
+        <div class="main__flex-item main__left-flex-item">
+          <img src="imgs/main__img.svg" alt="Computer image" class="main__img">
+        </div>
+        <div class="main__flex-item main__right-flex-item">
+          <h2 class="main__h1">Дизайн и верстка</h2>
+          <p class="main__p p-uniform">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+            Ipsum является
+            стандартной "рыбой" для текстов на латинице с начала XVI века.
+          </p>
+          <a href="mailto:daniilminin1990@yandex.ru" class="main__button-a btn-uniform">Написать мне</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <h2 class="about__h2 h2-uniform">Обо мне</h2>
+      <p class="about__p p-uniform">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+        Ipsum является
+        стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+    </div>
+  </section>
+  <section class="projects">
+    <div class="container">
+      <div class="projects__flex">
+        <div class="projects__flex-item">
+          <div class="projects__inner-flex">
+            <img src="imgs/project__img.svg" alt="Project img" class="project__img">
+            <div class="projects__inner-flex-item">
+              <h3 class="projects__h3">40+</h3>
+              <p class="projects__p">проектов</p>
+            </div>
+          </div>
+        </div>
+        <div class="projects__flex-item">
+          <div class="projects__inner-flex">
+            <img src="imgs/project__img.svg" alt="Project img" class="project__img">
+            <div class="projects__inner-flex-item">
+              <h3 class="projects__h3">40+</h3>
+              <p class="projects__p">проектов</p>
+            </div>
+          </div>
+        </div>
+        <div class="projects__flex-item">
+          <div class="projects__inner-flex">
+            <img src="imgs/project__img.svg" alt="Project img" class="project__img">
+            <div class="projects__inner-flex-item">
+              <h3 class="projects__h3">40+</h3>
+              <p class="projects__p">проектов</p>
+            </div>
+          </div>
+        </div>
+        <div class="projects__flex-item">
+          <div class="projects__inner-flex">
+            <img src="imgs/project__img.svg" alt="Project img" class="project__img">
+            <div class="projects__inner-flex-item">
+              <h3 class="projects__h3">40+</h3>
+              <p class="projects__p">проектов</p>
+            </div>
+          </div>
+        </div>
+        <div class="projects__flex-item">
+          <div class="projects__inner-flex">
+            <img src="imgs/project__img.svg" alt="Project img" class="project__img">
+            <div class="projects__inner-flex-item">
+              <h3 class="projects__h3">40+</h3>
+              <p class="projects__p">проектов</p>
+            </div>
+          </div>
+        </div>
+        <div class="projects__flex-item">
+          <div class="projects__inner-flex">
+            <img src="imgs/project__img.svg" alt="Project img" class="project__img">
+            <div class="projects__inner-flex-item">
+              <h3 class="projects__h3">40+</h3>
+              <p class="projects__p">проектов</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="video">
     <div class="container">
       <h2 class="video__h2 h2-uniform">Как я работаю</h2>
@@ -19,12 +123,20 @@
         Ipsum является
         стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
       <div class="video__video-wrapper">
-        <iframe src="https://www.youtube.com/embed/vPvIxwh9N2w" frameborder="0" class="video__video"
+        <iframe src="https://www.youtube.com/embed/L5qxVXzPwlg" frameborder="0" class="video__video"
           allowfullscreen></iframe>
       </div>
     </div>
   </section>
-  <section class="form">
+  <section class="skills">
+    <div class="container">
+      <div class="skills__flex flex-uniform">
+        <div class="skills__left-flex-item"></div>
+        <div class="skills__right-flex-item"></div>
+      </div>
+    </div>
+  </section>
+  <section class="form" id="form">
     <div class="container">
       <h2 class="form__h2 h2-uniform">Хотите веб сайт?</h2>
       <p class="form__p p-uniform">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
@@ -36,7 +148,7 @@
           <input type="email" class="form__input" placeholder="Ваш e-mail">
         </div>
         <textarea class="form__text-area" placeholder="Сообщение"></textarea>
-        <button type="submit" class="form__button">Отправить</button>
+        <button type="submit" class="form__button btn-uniform">Отправить</button>
       </form>
     </div>
   </section>
