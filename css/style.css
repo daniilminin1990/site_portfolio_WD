@@ -2,6 +2,8 @@
   --bgDarkBlue: #34547A;
   --silverColor: #EEEFF1;
   --mediumGrayColor: #727272;
+  --section-padding: 10rem 0;
+  --underline-color: #C4C4C4;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -113,7 +115,6 @@ li {
 }
 
 .header__flex {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -158,6 +159,7 @@ li {
 /* section Main */
 .main {
   background-color: var(--silverColor);
+  padding: 19.7rem 0 14.6rem;
 }
 
 .main__img {
@@ -167,7 +169,6 @@ li {
 
 .main__flex {
   justify-content: center;
-  padding: 19.7rem 0 14.6rem;
 }
 
 .main__h1 {
@@ -190,7 +191,7 @@ li {
 
 /* section About */
 .about {
-  padding: 12rem 10rem;
+  padding: var(--section-padding);
 }
 
 .about__h2,
@@ -208,40 +209,89 @@ li {
   margin: 0 auto;
 }
 
-/* secrtion Projects */
-.projects {
+/* secrtion Numbers */
+.numbers {
   background-color: var(--bgDarkBlue);
-  padding: 10rem 0;
+  padding: var(--section-padding)
 }
 
-.projects__flex {
-  display: flex;
+.numbers__flex {
   justify-content: space-evenly;
 }
 
-.projects__flex-item {}
+.numbers__flex-item {}
 
-.projects__inner-flex {
+.numbers__inner-flex {
   display: flex;
   align-items: center;
 }
 
-.project__img {
+.doc__img {
   margin-right: 2rem;
 }
 
-.projects__inner-flex-item {}
+.numbers__inner-flex-item {}
 
-.projects__h3,
-.projects__p {
+.numbers__h3,
+.numbers__p {
   color: #fff;
 }
 
-.projects__h3 {
+.numbers__h3 {
   margin-bottom: 1rem;
 }
 
-.projects__p {}
+.numbers__p {}
+
+/* section Skills */
+.skills {
+  padding: var(--section-padding);
+}
+
+.skills__flex {
+  align-items: center;
+}
+
+
+.skills__left-flex-item {
+  max-width: 45rem;
+  width: 100%;
+}
+
+.skills__h2 {
+  margin-bottom: 5rem;
+}
+
+.skills__apps {}
+
+.skills__apps_p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 164.863%;
+  margin-bottom: 2rem;
+}
+
+.skills__apps_underline {
+  background-color: var(--underline-color);
+  max-width: 44.5rem;
+  width: 100%;
+  height: 4px;
+  margin-bottom: 3rem;
+  /* position: relative; */
+}
+
+.progress {
+  background-color: var(--bgDarkBlue);
+  width: 80%;
+  height: inherit;
+}
+
+.skills__right-flex-item {}
+
+.flex__right-item {}
+
+.skills__img_person {}
+
 
 /* section Video */
 .video {
@@ -277,6 +327,41 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* section Projects */
+.projects {
+  padding: var(--section-padding);
+}
+
+.projects .container {
+  width: 192rem;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(auto, 1fr); */
+  justify-items: center;
+  gap: 0;
+}
+
+.projects__grid_item {}
+
+.projects__wrapper_eye-invisible {
+  max-width: 10rem;
+  width: 100%;
+  background-color: red;
+}
+
+.projects__imgs {
+  max-width: 48rem;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.projects__imgs:hover {
+  background: rgba(52, 84, 122, 0.8);
 }
 
 
