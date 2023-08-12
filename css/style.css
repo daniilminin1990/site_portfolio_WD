@@ -331,7 +331,7 @@ li {
 
 /* section Projects */
 .projects {
-  padding: var(--section-padding);
+  padding: 0;
 }
 
 .projects .container {
@@ -387,6 +387,26 @@ li {
   max-width: 48rem;
   width: 100%;
   vertical-align: middle;
+}
+
+/* section Clients */
+.clents {
+  padding: var(--section-padding);
+}
+
+.clients__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.clients__grid_item {
+  /* aspect-ratio: 1/1; */
+}
+
+.clients__img {
+  width: 25.5rem;
+  height: 12rem;
 }
 
 /* section Form */
@@ -448,7 +468,52 @@ li {
   margin: 0 auto;
 }
 
-/* section Clients */
+/* Footer */
+.footer {
+  padding: 2.7rem 0;
+  background-color: var(--bgDarkBlue);
+  color: #fff;
+}
+
+.footer__flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__left-flex_item {}
+
+.flex__left-item {}
+
+.footer__h3 {
+  margin-bottom: 2rem;
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+
+.footer__p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.footer__right-flex_item {
+  justify-content: end;
+}
+
+.flex__right-item {}
+
+.footer__links:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.fa-brands {
+  font-size: 4rem;
+}
+
+.fa-telegram {}
+
+.fa-instagram {}
+
+.fa-github {}
 
 @media screen and (max-width: 768px) {
   html {
