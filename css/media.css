@@ -1,0 +1,160 @@
+@media screen and (max-width: 1200px) {
+  :root {
+    --section-padding: 8rem 0;
+  }
+
+  .flex__left-item {
+    margin-right: 8rem;
+  }
+
+  .main__img {
+    width: 30rem;
+  }
+
+  .h2-uniform {
+    margin-bottom: 3rem;
+  }
+
+  .skills__h2 {
+    margin-bottom: 2rem;
+  }
+
+  .skills__apps_p {
+    margin-bottom: 1rem;
+  }
+
+  .video__h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project__img {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .flex__left-item {
+    margin-right: 6rem;
+  }
+
+  .skills__img_person {
+    width: 38rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    position: static;
+  }
+
+  .header__flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header__li-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  :root {
+    --section-padding: 4rem 0;
+  }
+
+  .main__flex {
+    flex-wrap: wrap;
+  }
+
+  .main__left-flex-item {
+    margin-right: 0;
+  }
+
+  .main__img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .main {
+    padding: var(--section-padding);
+  }
+
+  .flex__left-item {
+    margin-right: 0;
+  }
+
+  .main__img {
+    max-width: 35.7rem;
+    width: 100%;
+  }
+
+  .main__h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .p-uniform {
+    margin-bottom: 0rem;
+  }
+
+  .main__p {
+    margin-bottom: 3rem;
+  }
+
+  .main__button-a {
+    margin: 0 auto;
+  }
+
+  .h2-uniform {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .numbers__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+
+  .skills__flex {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .skills__right-flex-item {
+    margin-bottom: 3rem;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  .form {
+    padding: var(--section-padding);
+  }
+
+  .form__inner-flex {
+    flex-wrap: wrap;
+  }
+
+  .form__input {
+    max-width: 54rem;
+    width: 100%;
+  }
+
+  .form__input:not(:last-child) {
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header__left-flex-item {
+    margin-bottom: 2rem;
+  }
+
+  .header__nav-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
