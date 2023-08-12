@@ -4,6 +4,8 @@
   --mediumGrayColor: #727272;
   --section-padding: 10rem 0;
   --underline-color: #C4C4C4;
+  --horiz-p: 1.5rem;
+  --wideContainer: 195rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -52,7 +54,7 @@ li {
   width: 118rem;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 var(--horiz-p);
 }
 
 .h2-uniform {
@@ -140,7 +142,7 @@ li {
   line-height: 164.863%;
   letter-spacing: .16rem;
   text-transform: uppercase;
-  padding: 1rem 1.5rem;
+  padding: 1rem var(--horiz-p);
 }
 
 .header__li-item:not(:last-child) {
@@ -316,7 +318,7 @@ li {
   position: relative;
   max-width: 111rem;
   width: 100%;
-  padding-top: 56.5%;
+  padding-top: 54.5%;
   /* Т.к. видео в YouTube стандартно 16/9 = 56.5%*/
   margin: 0 auto;
 }
@@ -335,7 +337,7 @@ li {
 }
 
 .projects .container {
-  width: 195rem;
+  width: (var(--wideContainer) - 2*var(--horiz-p))/4;
 }
 
 .projects__grid {
@@ -521,7 +523,7 @@ li {
   }
 
   .form .container {
-    padding: 10rem 1.5rem;
+    padding: 10rem var(--horiz-p);
   }
 
   .form__inner-flex {
